@@ -54,12 +54,10 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <author>Example Inc.</author>
+    <description>An application creating passwords by hashing usernames saved on the device and a password inserted on start. I uploaded the source code to GitHub: https://github.com/sgeisler/PassSafe</description>
     <icon>
        <image>icon2.png</image>
     </icon>
-    <description>
-       An application creating passwords by hashing usernames saved on the device and a password inserted on start.
-    </description>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7-g/PasswordSafe" entry="true" type="Qnx/Elf">PasswordSafe</asset>
@@ -94,7 +92,7 @@
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
-    <asset path="assets/icon2.png">icon2.png</asset>
+    <asset path="icon2.png">icon2.png</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
